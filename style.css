@@ -1,0 +1,26 @@
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+.button {
+    color: white;
+}
+
+.button--download-ios {
+    background-color: hsl(171, 66%, 44%);
+
+}
+
+.button--download-mac {
+    background-color: hsl(233, 100%, 69%);
+}
