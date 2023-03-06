@@ -13,20 +13,48 @@ main{
 	background-repeat: no-repeat;
 }
 
-.section--main-width{
-	padding: 4em 14em;
-}
-
 h1, h2, h3 {
-    color: hsl(210, 10%, 33%);
+	color: hsl(210, 10%, 33%);
 }
 
 p {
-    color: hsl(201, 11%, 66%);
+	color: hsl(201, 11%, 66%);
 }
 
+.section--main-width{
+	padding: 2em 14em;
+}
+
+.section--wider{
+	padding: 2em 6em;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.img--small-svg{
+	height: 2em;
+	width: 2em;
+}
+
+.img--small-svg img{
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+
 .button {
-    color: white;
+	color: white;
     padding: 1em 2em;
     border: none;
     border-radius: 1.5em;
