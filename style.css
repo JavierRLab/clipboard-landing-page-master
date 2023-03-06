@@ -29,11 +29,6 @@ p {
 	padding: 2em 6em;
 }
 
-.column {
-	float: left;
-	width: 33.33%;
-}
-
 /* Clear floats after the columns */
 .row:after {
 	content: "";
@@ -41,9 +36,10 @@ p {
 	clear: both;
 }
 
-.img--small-svg{
+.img--small-svg {
 	height: 2em;
 	width: 2em;
+    justify-self: center;
 }
 
 .img--small-svg img{
@@ -52,6 +48,15 @@ p {
 	height: auto;
 }
 
+.row {
+    display: flex;
+}
+
+.column {
+    display: grid;
+    width: 33.3%;
+    padding: 1em;
+}
 
 .button {
 	color: white;
