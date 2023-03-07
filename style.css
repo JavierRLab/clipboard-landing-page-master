@@ -13,7 +13,11 @@ main{
 	background-repeat: no-repeat;
 }
 
-h1, h2, h3 {
+footer {
+    background-color:  hsl(201, 11%, 95%);
+}
+
+h1, h2, h3, span {
 	color: hsl(210, 10%, 33%);
 }
 
@@ -31,12 +35,6 @@ p {
 
 .section--snippets {
     display: flex;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 .div--snippets-right-side {
@@ -95,6 +93,30 @@ p {
 
 .img--collaborators-logo {
     margin: auto;
+}
+
+.footer--section {
+    display: flex;
+}
+.footer--div--logo {
+    width: 25%;
+}
+
+.footer--div--logo img {
+    width: 3em;
+}
+
+.footer--div--menu {
+    display: flex;
+    width: 50%;
+}
+
+.footer--span {
+    padding-right: 2em;
+}
+
+.footer--div--social-network {
+    width: 25%;
 }
 
 #main-logo {
