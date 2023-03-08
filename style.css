@@ -1,20 +1,45 @@
+:root {
+    --main: hsl(210, 10%, 33%);
+    --main-50: hsl(201, 11%, 66%);
+
+    --bg-color:  hsla(201, 11%, 100%);
+    --bg-color:  hsla(201, 11%, 90%);
+    --bg-color:  hsla(201, 11%, 80%);
+
+    --ff: 'Bai Jamjuree', sans-serif;
+
+    --fs--4: clamp(0.48rem, calc(0.46rem + 0.10vw), 0.54rem);
+    --fs--3: clamp(0.58rem, calc(0.55rem + 0.16vw), 0.67rem);
+    --fs--2: clamp(0.69rem, calc(0.64rem + 0.25vw), 0.84rem);
+    --fs--1: clamp(0.83rem, calc(0.76rem + 0.38vw), 1.05rem);
+    --fs-0: clamp(1.00rem, calc(0.89rem + 0.54vw), 1.31rem);
+    --fs-1: clamp(1.20rem, calc(1.05rem + 0.77vw), 1.64rem);
+    --fs-2: clamp(1.44rem, calc(1.23rem + 1.06vw), 2.05rem);
+    --fs-3: clamp(1.73rem, calc(1.44rem + 1.45vw), 2.56rem);
+    --fs-4: clamp(2.07rem, calc(1.68rem + 1.97vw), 3.20rem);
+    --fs-5: clamp(2.49rem, calc(1.96rem + 2.64vw), 4.01rem);
+
+
+}
+
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: var(--ff);
     text-align: center;
 }
 
 main{
-	width: 1440px;
+	max-width: 1440px;
 	margin: 0 auto;
-	background-image: url("./images/bg-header-desktop.png");
 	background-repeat: no-repeat;
+	background-image: url("./images/bg-header-desktop.png");
 }
 
 footer {
-    background-color:  hsl(201, 11%, 95%);
+    background-color: var(--bg-color);
 }
 
 h1, h2, h3, span {
@@ -25,12 +50,15 @@ p {
 	color: hsl(201, 11%, 66%);
 }
 
+
+
+
 .section--main-width{
-	padding: 2em 14em;
+    padding: 2em 14em;
 }
 
 .section--wider{
-	padding: 2em 6em;
+    padding: 2em 6em;
 }
 
 .section--snippets {
@@ -38,7 +66,7 @@ p {
 }
 
 .div--snippets-right-side {
-    display: grid;
+    /* display: grid; */
     text-align: left;
     margin-left: 2em;
     padding-right: 15em;
@@ -49,15 +77,15 @@ p {
 }
 
 .img--small-svg {
-	height: 2em;
-	width: 2em;
+    height: 2em;
+    width: 2em;
     justify-self: center;
 }
 
 .img--small-svg img{
-	margin: auto;
-	width: 100%;
-	height: auto;
+    margin: auto;
+    width: 100%;
+    height: auto;
 }
 
 .productivity-tools {
@@ -71,7 +99,7 @@ p {
 }
 
 .button {
-	color: white;
+    color: white;
     padding: 1em 2em;
     margin: 0.5em;
     border: none;
@@ -122,3 +150,5 @@ p {
 #main-logo {
     margin: 3em;
 }
+
+

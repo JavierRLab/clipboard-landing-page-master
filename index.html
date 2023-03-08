@@ -20,24 +20,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
+  <header>
     <img id="main-logo" src="./images/logo.svg" alt="main logo">
     <section class="section--main-width">
-      <h1>A history of everything you copy</h1>
-      <p>
-        Clipboard allows you to track and organize everything you
-        copy. Instantly access your clipboard on all your devices.
-      </p>
-
-      <button class="button button--download-ios">Download for iOS</button>
-      <button class="button button--download-mac">Download for Mac</button>
-
+      <div class="main__header">
+        <h1>A history of everything you copy</h1>
+        <p>
+          Clipboard allows you to track and organize everything you
+          copy. Instantly access your clipboard on all your devices.
+        </p>
+        <!-- <button class="button button--download-ios">Download for iOS</button> -->
+        <button class="button btn-primary">Download for iOS</button>
+        <button class="button button--download-mac">Download for Mac</button>
+      </div>
+  </header>
+  
+  <main>
     </section>
-    <section class="section--main-width">
+    <section class="section__main max-width-content">
 
-      <h2>Keep track of your snippets</h2>
+      <h2 class="section__title">Keep track of your snippets</h2>
 
-      <p>
+      <p class="section__description">
         Clipboard instantly stores any item you copy in the cloud,
         meaning you can access your snippets immediately on all your
         devices. Our Mac and iOS apps will help you organize everything.
@@ -49,15 +53,13 @@
         <img src="./images/image-computer.png" alt="computer">
       </div>
 
-      <div class="div--snippets-right-side">
-        <h3>Quick Search</h3>
-
-        <p>
-          Easily search your snippets by content, category, web address, application, and more.
-        </p>
+      <div class="div--snippets-right-side snippets">
+        <div class="snippets__info">
+          <h3>Quick Search</h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
 
         <h3>iCloud Sync</h3>
-
         <p>
           Instantly saves and syncs snippets across all your devices.
         </p>
@@ -79,10 +81,10 @@
       </p>
 
 
-      <img class="image-devices" src="./images/image-devices.png" alt="some devices">
+      <img class="image-devices" src="./images/image-devices.png" alt="">
     </section>
 
-    <section class="section--wider">
+    <article class="section--wider">
 
       <h2>Supercharge your workflow</h2>
 
@@ -123,7 +125,7 @@
           </p>
         </div>
       </div>
-    </section>
+    </article>
 
     <section class="section--wider">
       <div class="div--collaborators">
@@ -149,11 +151,12 @@
     </section>
   </main>
   <footer>
-    <section class="section--main-width footer--section">
+    <h1></h1>
+    <div class="section--main-width footer--section">
       <div class="footer--div--logo">
         <img src="./images/logo.svg" alt="logo">
       </div>
-      <div class="footer--div--menu">
+      <div class="footer__menu">
         <span class="footer--span">FAQs</span>
         <span class="footer--span">Contact Us</span>
         <span class="footer--span">Privacy Policy</span>
@@ -165,7 +168,7 @@
         <img src="./images/icon-twitter.svg" alt="twitter">
         <img src="./images/icon-instagram.svg" alt="instagram">
       </div>
-  </section>
+    </div>
   </footer>
 </body>
 </html>
